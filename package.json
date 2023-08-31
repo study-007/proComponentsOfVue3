@@ -1,0 +1,29 @@
+{
+  "name": "pro-components-of-vue3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "pro-components+vue3+vite+ts",
+    "基于element-plus",
+    "vue3组件库"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "author": "Leo",
+  "license": "MIT",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "release": "release-it"
+  },
+  "publishConfig": {
+    "type": "git",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
