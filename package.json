@@ -1,6 +1,6 @@
 {
   "name": "pro-components-of-vue3",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "lib/index.js",
   "module": "es/index.mjs",
@@ -24,6 +24,7 @@
   },
   "publishConfig": {
     "type": "git",
+    "url": "https://github.com/study-007/proComponentsOfVue3",
     "registry": "https://registry.npmjs.org/"
   }
 }
