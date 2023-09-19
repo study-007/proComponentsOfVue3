@@ -4,6 +4,7 @@ declare module "@vue/runtime-core" {
     ProDescriptions: typeof components.ProDescriptions;
     ProFormDescriptions: typeof components.ProFormDescriptions;
     ProDialog: typeof components.ProDialog;
+    ProForm: typeof components.ProForm;
   }
 }
 export {};

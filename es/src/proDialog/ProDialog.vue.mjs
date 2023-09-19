@@ -1,6 +1,6 @@
 import { defineComponent as w, useSlots as z, useAttrs as F, ref as T, computed as D, resolveComponent as r, resolveDirective as N, openBlock as n, createElementBlock as i, createVNode as a, mergeProps as S, unref as s, withCtx as l, createElementVNode as o, toDisplayString as d, createBlock as L, createCommentVNode as E, createTextVNode as h, renderSlot as g, withDirectives as M } from "vue";
 import "./style/index.less";
-const $ = { class: "custom-dialog-container" }, A = { class: "dialog-title" }, H = { class: "btns" }, P = /* @__PURE__ */ o("svg", {
+const $ = { class: "pro-dialog-wrapper" }, A = { class: "dialog-title" }, H = { class: "btns" }, P = /* @__PURE__ */ o("svg", {
   viewBox: "0 0 1024 1024",
   xmlns: "http://www.w3.org/2000/svg",
   "data-v-ea893728": ""
@@ -36,17 +36,17 @@ const $ = { class: "custom-dialog-container" }, A = { class: "dialog-title" }, H
     loading: { type: Boolean, default: !1 }
   },
   emits: ["update:modelValue", "close", "confirm"],
-  setup(V, { emit: u }) {
+  setup(V, { emit: f }) {
     const t = V, B = z(), e = F(), c = T(!1), C = D(() => !(t.hiddenFullBtn || e != null && e.fullscreen)), y = () => {
       e != null && e.fullscreen || (c.value = !c.value);
-    }, f = () => {
-      Reflect.has(e, "before-close") && typeof e["before-close"] == "function" && e["before-close"](), u("close");
+    }, u = () => {
+      Reflect.has(e, "before-close") && typeof e["before-close"] == "function" && e["before-close"](), f("close");
     }, k = () => {
-      u("confirm");
+      f("confirm");
     };
     return (_, I) => {
       var v;
-      const m = r("el-icon"), p = r("el-button"), x = r("el-dialog"), b = N("loading");
+      const p = r("el-icon"), m = r("el-button"), x = r("el-dialog"), b = N("loading");
       return n(), i("div", $, [
         a(x, S(s(e), {
           "model-value": t.modelValue,
@@ -58,7 +58,7 @@ const $ = { class: "custom-dialog-container" }, A = { class: "dialog-title" }, H
               o("span", A, d(t.title), 1)
             ]),
             o("div", H, [
-              s(C) ? (n(), L(m, {
+              s(C) ? (n(), L(p, {
                 key: 0,
                 onClick: y
               }, {
@@ -67,7 +67,7 @@ const $ = { class: "custom-dialog-container" }, A = { class: "dialog-title" }, H
                 ]),
                 _: 1
               })) : E("", !0),
-              a(m, { onClick: f }, {
+              a(p, { onClick: u }, {
                 default: l(() => [
                   R
                 ]),
@@ -77,7 +77,7 @@ const $ = { class: "custom-dialog-container" }, A = { class: "dialog-title" }, H
           ]),
           footer: l(() => [
             s(B).footer ? g(_.$slots, "footer", { key: 1 }) : (n(), i("span", q, [
-              a(p, {
+              a(m, {
                 type: "primary",
                 onClick: k
               }, {
@@ -86,7 +86,7 @@ const $ = { class: "custom-dialog-container" }, A = { class: "dialog-title" }, H
                 ]),
                 _: 1
               }),
-              a(p, { onClick: f }, {
+              a(m, { onClick: u }, {
                 default: l(() => [
                   h(d(t.cancelText), 1)
                 ]),
