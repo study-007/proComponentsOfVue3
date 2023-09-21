@@ -1,0 +1,111 @@
+.pro-form-wrapper{
+    .el-upload-list__item .el-icon--close-tip {
+        display: none !important;
+    }
+    
+    .upload-mini .el-upload--picture-card {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .upload-mini .el-upload-list__item {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .el-upload--none .el-upload--picture-card {
+        display: none;
+    }
+    
+    .el-form-item .el-form-item {
+        margin-bottom: 18px;
+    }
+    
+    .dataForm {
+        margin-top: 20px;
+        border-left: 1px solid #dcdfe6;
+        border-right: 1px solid #dcdfe6;
+        // border-top: 1px solid #dcdfe6;
+        border-bottom: 1px solid #dcdfe6;
+        // margin-bottom: 20px;
+    }
+    .formItemDuty {
+        border-top: 1px solid #dcdfe6;
+        margin: 0px;
+        .el-select,
+        .el-input-number {
+            width: 100%;
+        }
+        .el-autocomplete {
+            width: 100%;
+        }
+        .el-cascader {
+            width: 100%;
+        }
+        .el-input {
+            width: 100%;
+            .el-input__inner {
+                // text-align: center;
+                // border-radius: 0px;
+            }
+        }
+        .el-form-item__label {
+            justify-content: center;
+        }
+        .el-form-item__content {
+            border-left: 1px solid #dcdfe6;
+            .el-input__wrapper {
+                border: none;
+                border-radius: 0px;
+                box-shadow: none;
+            }
+        }
+        .el-form-item__error {
+            top: 23%;
+            right: 3px;
+            left: auto;
+        }
+    }
+    .formItemDutyIn {
+        .el-form-item__content {
+            border-right: 1px solid #dcdfe6;
+        }
+    }
+    .btnForm {
+        .el-form-item__content {
+            display: flex;
+            justify-content: center;
+            margin-left: 0px !important;
+        }
+        padding: 20px 0;
+        border-left: 1px solid #dcdfe6;
+        border-right: 1px solid #dcdfe6;
+        border-bottom: 1px solid #dcdfe6;
+    }
+    .DutyAvatar {
+        margin-top: 10px;
+        width: 95%;
+        height: 130px;
+        /* overflow: auto; */
+    }
+    .customUpLoadImg {
+        .el-upload.el-upload--picture-card {
+            height: 165px;
+        }
+    }
+    
+    .fade-list-enter-active {
+        opacity: 0;
+        transform: translateY(100%);
+        transition: all 0.6s;
+    }
+    .fade-list-enter-to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .fade-list-leave-to {
+        opacity: 0;
+        transform: translateY(0);
+        transition: all 0.6s;
+    }
+}
