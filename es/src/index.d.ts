@@ -3,3 +3,4 @@ export * from "./proFormDescriptions";
 export * from "./proDialog";
 export * from "./proForm";
 export * from './proTable';
+export * from './proTree';

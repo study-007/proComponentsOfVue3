@@ -20,10 +20,13 @@ declare const _sfc_main: import("vue").DefineComponent<{}, {
         pagination: object;
         selection: boolean;
     };
+    form: {
+        name: string;
+    };
     elTableRef: import("vue").Ref<any>;
     pageSizeRef: import("vue").Ref<number>;
     currentPageRef: import("vue").Ref<number>;
-    emit: (event: "update:current-page" | "update:page-size" | "register", ...args: any[]) => void;
+    emit: (event: "update:current-page" | "update:page-size" | "register" | "search", ...args: any[]) => void;
     pagination: import("vue").ComputedRef<{
         small: boolean;
         background: boolean;
@@ -33,6 +36,7 @@ declare const _sfc_main: import("vue").DefineComponent<{}, {
         disabled: boolean;
         hideOnSinglePage: boolean;
     } & object>;
+    search: () => void;
     ElTableColumnRender: import("vue").DefineComponent<{
         data: {
             type: null;
@@ -66,9 +70,10 @@ declare const _sfc_main: import("vue").DefineComponent<{}, {
             required: false;
         };
     }>>, {}>;
-}, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, ("update:current-page" | "update:page-size" | "register")[], "update:current-page" | "update:page-size" | "register", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{}>> & {
+}, {}, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, ("update:current-page" | "update:page-size" | "register" | "search")[], "search" | "update:current-page" | "update:page-size" | "register", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{}>> & {
     "onUpdate:current-page"?: ((...args: any[]) => any) | undefined;
     "onUpdate:page-size"?: ((...args: any[]) => any) | undefined;
     onRegister?: ((...args: any[]) => any) | undefined;
+    onSearch?: ((...args: any[]) => any) | undefined;
 }, {}>;
 export default _sfc_main;

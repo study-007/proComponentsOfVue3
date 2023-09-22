@@ -6,6 +6,7 @@ declare module "@vue/runtime-core" {
     ProDialog: typeof components.ProDialog;
     ProForm: typeof components.ProForm;
     ProTable: typeof components.ProTable;
+    ProTree: typeof components.ProTree;
   }
 }
 export {};
